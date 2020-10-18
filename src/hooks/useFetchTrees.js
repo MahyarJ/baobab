@@ -17,6 +17,10 @@ const useFetchTrees = () => {
         setLoading(false);
         setError(error);
       });
+    return () => {
+      // if caller unmounted during api call
+      return null;
+    };
   }, []);
 
   return { data, loading, error };

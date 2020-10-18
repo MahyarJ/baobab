@@ -3,7 +3,7 @@ import styles from './TreeBox.module.sass';
 import Button from './Button';
 
 const TreeBox = (props) => {
-  const { title, subtitle, image } = props;
+  const { title = '', subtitle = '', image } = props;
   const [showImage, setShowImage] = useState(false);
   const toggleShowImage = () => {
     setShowImage((prevState) => !prevState);
