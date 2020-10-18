@@ -1,7 +1,7 @@
 import React from 'react';
-import useFetchTrees from './hooks/useFetchTrees';
-import Card from './components/Card';
-import TreeBox from './components/TreeBox';
+import useFetchTrees from '../hooks/useFetchTrees';
+import Card from './Card';
+import ImageBox from './ImageBox';
 
 const ShowCase = () => {
   const { data, loading, error } = useFetchTrees();
@@ -14,7 +14,7 @@ const ShowCase = () => {
       {data?.trees?.map(({ name, species_name, image }, index) => {
         return (
           <Card key={index}>
-            <TreeBox title={name} subtitle={species_name} image={image} />
+            <ImageBox title={name} subtitle={species_name} image={image} />
           </Card>
         );
       })}

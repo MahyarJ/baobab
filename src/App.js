@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.module.sass';
-import ShowCase from './ShowCase';
+import ShowCase from './components/ShowCase';
 
 const App = () => {
   return (

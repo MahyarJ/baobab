@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import styles from './TreeBox.module.sass';
+import styles from './ImageBox.module.sass';
 import Button from './Button';
 
-const TreeBox = (props) => {
+const ImageBox = (props) => {
   const { title = '', subtitle = '', image } = props;
   const [showImage, setShowImage] = useState(false);
   const toggleShowImage = () => {
@@ -19,4 +19,4 @@ const TreeBox = (props) => {
   );
 };
 
-export default TreeBox;
+export default ImageBox;
