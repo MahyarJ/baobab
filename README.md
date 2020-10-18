@@ -34,9 +34,9 @@
 
 - I tried to extract `reusable` custom hooks to make the inside component logic more simple and easy to understand.
 
-- Using `.env` files to handle environment variables like api-urls, can prevents hard code and make things more pre-configureable
+- Using `.env` files to handle environment variables like APIs, can prevent hard code and make things more pre-configurable
 
-- As I mentioned in some comments in code, in a real project we should take more actions around `A11Y` and computer accessibility considerations and component implementations.
+- We should take care of `A11Y` and computer accessibility considerations and component implementations. So I tried to use `semantic` tags as much as I could but in real projects, we should take more actions on components and colors.
 
 - Handling loading state in components and appropriate default values for props are too important to implement. Also, handling `loading` and `error` return values in hooks can lead us to a better status handling.
 

@@ -10,7 +10,10 @@ const ImageBox = (props) => {
   };
 
   return (
-    <div className={`${styles.container} ${showImage && styles.expanded}`}>
+    <div
+      data-testid="imageBox"
+      className={`${styles.container} ${showImage && styles.expanded}`}
+    >
       <h3>{title}</h3>
       <h6>{subtitle}</h6>
       {showImage && <img loading="lazy" alt={`${title} - ${subtitle}`} src={image} />}
